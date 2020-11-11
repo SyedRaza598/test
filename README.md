@@ -6,6 +6,8 @@ In the project directory, you can run:
 
 ### `npm start`
 
+Myrepo
+
 Runs the app in the development mode.<br />
 Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
 
@@ -28,6 +30,9 @@ Your app is ready to be deployed!
 See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
 
 ### `npm run eject`
+
+git config user.email "shah.one3@gmail.com"
+git config user.name "SyedRaza598"
 
 **Note: this is a one-way operation. Once you `eject`, you can’t go back!**
 
@@ -66,3 +71,4 @@ This section has moved here: https://facebook.github.io/create-react-app/docs/de
 ### `npm run build` fails to minify
 
 This section has moved here: https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify
+"# PortfolioApp"

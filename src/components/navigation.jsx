@@ -149,16 +149,10 @@ const Navigation = () => {
                 About Me
               </Link>
             </li>
-            <li>
-              <Link to="/about">FakeLink</Link>
-            </li>
           </ul>
         </div>
 
         <Switch>
-          <Route exact path="/about">
-            <About />
-          </Route>
           <Route exact path="/about">
             <About />
           </Route>

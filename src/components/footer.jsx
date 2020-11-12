@@ -58,6 +58,7 @@ const Footer = ({email , password , check}) => {
                     )
                     )}
                 </div>
+                <p>Im new</p>
             </div>
             {test ? myCompo() : otherCompo()}
             <form action="" id="form" onSubmit={formik.handleSubmit}>

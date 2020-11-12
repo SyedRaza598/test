@@ -1,0 +1,288 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500;600;700;800;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Staatliches&display=swap');
+$myh1Size: clamp(1.4em, 5vw, 2em);
+$myPsize: clamp(0.8em, 2vw, 1em);
+body {
+  font-family: 'Montserrat', sans-serif;
+  overflow-x: hidden;
+  width: 100%;
+}
+//Toggler CSS
+#toggler {
+  text-align: center;
+  height: auto;
+  width: 80px;
+  color: white;
+  background-color: transparent;
+  border: none;
+  border-radius: 10px;
+  position: fixed;
+  top: 45%;
+  left: 2%;
+  z-index: 3;
+  cursor: pointer;
+  font-weight: 500;
+  span {
+    height: 2px;
+    width: 40px;
+    background-color: #fff;
+    display: block;
+    margin: 6px 0px 0px 20px;
+  }
+}
+//Menu Div CSS
+#menu {
+  position: fixed;
+  top: 0;
+  left: 0;
+  background: linear-gradient(
+    117deg,
+    rgba(2, 0, 36, 1) 0%,
+    rgba(9, 9, 121, 1) 63%,
+    rgba(0, 40, 214, 1) 100%
+  );
+  width: 0%;
+  height: 100%;
+  z-index: 2;
+  ul {
+    list-style: none;
+    display: flex;
+    position: absolute;
+    top: 37%;
+    left: 25%;
+    visibility: hidden;
+    li {
+      margin: 40px;
+      font-weight: 500;
+      font-size: 40px;
+      color: #fff;
+      font-family: 'Staatliches', cursive;
+      .link {
+        color: #fff;
+        text-decoration: none;
+      }
+    }
+  }
+}
+//Intro-Div
+#intro {
+  position: absolute;
+  top: 40%;
+  left: 10%;
+  background-color: transparent;
+  text-align: left;
+  z-index: 1;
+  color: red;
+  //display: none;
+  h1 {
+    color: #fff;
+  }
+}
+
+//About Me-----------------------------------
+.aboutMain {
+  position: absolute;
+  top: 0;
+  left: 0;
+  h1 {
+    font-size: 10px;
+  }
+}
+#hire-me {
+  margin: 4.5rem 0px;
+  position: relative;
+  h1 {
+    font-size: $myh1Size;
+  }
+  p {
+    font-size: $myPsize;
+  }
+  .skills {
+    margin: 20px 0px;
+    #progress,
+    #progress1,
+    #progress2,
+    #progress3 {
+      height: 10px;
+      width: 15rem;
+      background: linear-gradient(
+        to right,
+        royalblue 0%,
+        royalblue 80%,
+        rgb(228, 228, 228) 80%,
+        rgb(228, 228, 228) 100%
+      );
+      position: relative;
+      border-radius: 10px;
+      margin-top: 5px;
+      &::before {
+        content: '';
+        display: block;
+        height: 25px;
+        width: 25px;
+        background-color: #fff;
+        border-radius: 50%;
+        border: 6px solid royalblue;
+        position: absolute;
+        top: -7px;
+        left: 77%;
+      }
+    }
+    #progress1 {
+      background: linear-gradient(
+        to right,
+        royalblue 0%,
+        royalblue 84%,
+        rgb(228, 228, 228) 84%,
+        rgb(228, 228, 228) 100%
+      );
+      &::before {
+        left: 82%;
+      }
+    }
+    #progress2 {
+      background: linear-gradient(
+        to right,
+        royalblue 0%,
+        royalblue 60%,
+        rgb(228, 228, 228) 60%,
+        rgb(228, 228, 228) 100%
+      );
+      &::before {
+        left: 56%;
+      }
+    }
+    #progress3 {
+      background: linear-gradient(
+        to right,
+        royalblue 0%,
+        royalblue 84%,
+        rgb(228, 228, 228) 84%,
+        rgb(228, 228, 228) 100%
+      );
+      &::before {
+        left: 82%;
+      }
+    }
+    span {
+      font-size: 12px;
+    }
+    #level {
+      position: absolute;
+      left: 40%;
+      margin: 4px;
+    }
+  }
+}
+.experience {
+  position: relative;
+  #header {
+    text-align: center;
+    h1 {
+      font-size: $myh1Size;
+    }
+    //font-size: $myh1Size;
+    // &::before {
+    //   content: '';
+    //   height: 4px;
+    //   width: 120px;
+    //   background-color: rgb(80, 58, 218);
+    //   display: block;
+    //   align-self: center;
+    //   margin: 0px 0px 0px 31em;
+    // }
+    &::after {
+      content: '';
+      height: 4px;
+      width: 120px;
+      background-color: rgb(80, 58, 218);
+      display: block;
+      align-self: center;
+      margin: 0px 0px 0px 30.2em;
+    }
+  }
+  .timeLine {
+    height: 22rem;
+    width: 4px;
+    background-color: slateblue;
+    position: absolute;
+    left: 50%;
+    top: 15%;
+    border-radius: 10px;
+    &::before {
+      content: '1';
+      text-align: center;
+      font-weight: bold;
+      display: block;
+      height: 35px;
+      width: 35px;
+      background-color: #fff;
+      border-radius: 50%;
+      border: 5px solid royalblue;
+      position: absolute;
+      top: 20%;
+      left: -15px;
+    }
+    &::after {
+      content: '2';
+      display: block;
+      text-align: center;
+      font-weight: bold;
+      height: 35px;
+      width: 35px;
+      background-color: #fff;
+      border-radius: 50%;
+      border: 6px solid royalblue;
+      position: absolute;
+      top: 70%;
+      left: -16px;
+    }
+  }
+  .companies {
+    // padding: 100px;
+    // margin: 0;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    justify-items: center;
+    grid-auto-rows: minmax(150px auto);
+    grid-auto-columns: minmax(150px auto);
+    grid-row-gap: 20px;
+    #company1 {
+      h3 {
+        margin-top: 80px;
+      }
+    }
+    #company2 {
+      h3 {
+        margin-top: 40px;
+      }
+      grid-column: 2/3;
+      grid-row: 2;
+    }
+    #discription1 {
+      //background-color: hotpink;
+      padding: 40px 0px 0px 40px;
+    }
+    #discription2 {
+      //background-color: yellow;
+      padding: 0px 40px 0px 0px;
+    }
+  }
+}
+
+#form {
+  display: block;
+  padding: 25%;
+  input {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+  }
+  label {
+    font-weight: bolder;
+  }
+}

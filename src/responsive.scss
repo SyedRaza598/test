@@ -1,0 +1,207 @@
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+  #toggler {
+    top: 4%;
+    left: 82%;
+    transform: scale(0.8);
+  }
+  #menu {
+    ul {
+      display: block;
+      top: 10%;
+      left: 0%;
+      font-size: smaller;
+      li {
+        font-size: x-large;
+        margin: 40px 0px;
+      }
+    }
+  }
+  //About
+  .aboutMain {
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
+  #hire-me {
+    margin: 4.5rem 0px;
+    position: relative;
+    // h1 {
+    //   font-size: 5vw;
+    // }
+    // p {
+    //   font-size: 2.5vw;
+    // }
+    .skills {
+      margin: 20px 0px;
+      #progress,
+      #progress1,
+      #progress2,
+      #progress3 {
+        height: 10px;
+        width: 15rem;
+        background: linear-gradient(
+          to right,
+          royalblue 0%,
+          royalblue 80%,
+          rgb(228, 228, 228) 80%,
+          rgb(228, 228, 228) 100%
+        );
+        position: relative;
+        border-radius: 10px;
+        margin-top: 5px;
+        &::before {
+          content: '';
+          display: block;
+          height: 25px;
+          width: 25px;
+          background-color: #fff;
+          border-radius: 50%;
+          border: 6px solid royalblue;
+          position: absolute;
+          top: -7px;
+          left: 77%;
+        }
+      }
+      #progress1 {
+        background: linear-gradient(
+          to right,
+          royalblue 0%,
+          royalblue 84%,
+          rgb(228, 228, 228) 84%,
+          rgb(228, 228, 228) 100%
+        );
+        &::before {
+          left: 82%;
+        }
+      }
+      #progress2 {
+        background: linear-gradient(
+          to right,
+          royalblue 0%,
+          royalblue 60%,
+          rgb(228, 228, 228) 60%,
+          rgb(228, 228, 228) 100%
+        );
+        &::before {
+          left: 56%;
+        }
+      }
+      #progress3 {
+        background: linear-gradient(
+          to right,
+          royalblue 0%,
+          royalblue 84%,
+          rgb(228, 228, 228) 84%,
+          rgb(228, 228, 228) 100%
+        );
+        &::before {
+          left: 82%;
+        }
+      }
+      span {
+        font-size: 12px;
+      }
+      #level {
+        position: absolute;
+        left: 40%;
+        margin: 4px;
+      }
+    }
+  }
+  .experience {
+    //background-color: saddlebrown;
+    position: relative;
+    #header {
+      text-align: center;
+      &::after {
+        content: '';
+        height: 4px;
+        width: 120px;
+        background-color: rgb(80, 58, 218);
+        display: block;
+        align-self: center;
+        margin: -5px 0px 0px 10.5em;
+      }
+    }
+    .timeLine {
+      height: 40.4rem;
+      width: 4px;
+      background-color: slateblue;
+      position: absolute;
+      left: 2%;
+      top: 6%;
+      border-radius: 10px;
+      &::before {
+        content: '1';
+        text-align: center;
+        font-weight: bold;
+        display: block;
+        height: 35px;
+        width: 35px;
+        background-color: #fff;
+        border-radius: 50%;
+        border: 5px solid royalblue;
+        position: absolute;
+        top: 9%;
+        left: -15px;
+      }
+      &::after {
+        content: '2';
+        display: block;
+        text-align: center;
+        font-weight: bold;
+        height: 35px;
+        width: 35px;
+        background-color: #fff;
+        border-radius: 50%;
+        border: 6px solid royalblue;
+        position: absolute;
+        top: 60.5%;
+        left: -16px;
+      }
+    }
+    // #company1 {
+    //   text-align: left;
+    //   padding: 60px 0px 0px 60px;
+    // }
+    // #discription1 {
+    //   //margin-left: 46px;
+    //   padding: 0px 40px 0px 60px;
+    // }
+    // #discription2 {
+    //   //margin-left: 46px;
+    //   padding: 0px 40px 0px 60px;
+    // }
+    // #company2 {
+    //   padding: 0px 20px 0px 40px;
+    // }
+    .companies {
+      display: block;
+      #company1 {
+        padding: 0px 20px 0px 40px;
+      }
+      #company2 {
+        padding: 0px 20px 0px 40px;
+      }
+      #discription1 {
+        padding: 0px 20px 0px 40px;
+      }
+      #discription2 {
+        padding: 0px 20px 0px 40px;
+      }
+    }
+  }
+}
+
+// /* Small devices (portrait tablets and large phones, 600px and up) */
+// @media only screen and (min-width: 600px) {...}
+
+// /* Medium devices (landscape tablets, 768px and up) */
+// @media only screen and (min-width: 768px) {...}
+
+// /* Large devices (laptops/desktops, 992px and up) */
+// @media only screen and (min-width: 992px) {...}
+
+// /* Extra large devices (large laptops and desktops, 1200px and up) */
+// @media only screen and (min-width: 1200px) {...}

@@ -4,8 +4,8 @@ $myh1Size: clamp(1.4em, 5vw, 2em);
 $myPsize: clamp(0.8em, 2vw, 1em);
 body {
   font-family: 'Montserrat', sans-serif;
-  //overflow-x: hidden;
-  width: 100%;
+  overflow-x: hidden;
+  //width: 100%;
 }
 //Toggler CSS
 #toggler {
@@ -19,7 +19,7 @@ body {
   position: fixed;
   top: 45%;
   left: 2%;
-  z-index: 3;
+  z-index: 4;
   cursor: pointer;
   font-weight: 500;
   span {
@@ -30,6 +30,13 @@ body {
     margin: 6px 0px 0px 20px;
   }
 }
+// .navWrapper {
+//   display: block;
+//   background-color: green;
+//   height: 80px;
+//   position: fixed;
+//   top: 20%;
+// }
 //Menu Div CSS
 #menu {
   position: fixed;
@@ -66,10 +73,13 @@ body {
 }
 //HOME
 .wrapper {
-  position: relative;
+  //display: none;
+  position: absolute;
+  top: 0%;
+  left: 0%;
   overflow-x: hidden;
+  background-color: turquoise;
   #particles-container {
-    //position: relative;
     background: rgb(2, 0, 36);
     background: -moz-linear-gradient(
       117deg,
@@ -91,8 +101,7 @@ body {
     );
     filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#020024",endColorstr="#0028d6",GradientType=1);
     height: 100vh;
-    width: 100%;
-    z-index: -1;
+    width: 100vw;
   }
   //Intro-Div
   #intro {

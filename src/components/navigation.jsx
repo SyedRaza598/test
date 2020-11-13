@@ -119,17 +119,18 @@ const Navigation = () => {
 
   return (
     <React.Fragment>
-      <div id="toggler" onClick={() => navToggler('/projectss')}>
-        {toggle}
-        <div
-          id="burgerWraper"
-          onMouseEnter={crossRotate}
-          onMouseLeave={crossRotateReset}
-        >
-          <span id="line1" className="menuLine"></span>
-          <span id="line2" className="menuLine"></span>
-          <span id="line3" className="menuLine"></span>
-        </div>
+      <div className="topDiv"></div>
+        <div id="toggler" onClick={() => navToggler('/projectss')}>
+          {toggle}
+          <div
+            id="burgerWraper"
+            onMouseEnter={crossRotate}
+            onMouseLeave={crossRotateReset}
+          >
+            <span id="line1" className="menuLine"></span>
+            <span id="line2" className="menuLine"></span>
+            <span id="line3" className="menuLine"></span>
+          </div>
       </div>
       <Router>
         <div id="menu">

@@ -10,6 +10,12 @@ const App = () => {
     console.log('playing');
   };
 
+  const findSize = () => {
+    let w = window.innerWidth;
+    let h = window.innerHeight;
+    console.log(`window width is ${w} and height is ${h}`);
+  };
+
   useEffect(() => {
     console.log('Called');
   });

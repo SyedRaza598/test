@@ -8,31 +8,6 @@ body {
   padding: 0;
 }
 
-#particles-container {
-  background: rgb(2, 0, 36);
-  background: -moz-linear-gradient(
-    117deg,
-    rgba(2, 0, 36, 1) 0%,
-    rgba(9, 9, 121, 1) 63%,
-    rgba(0, 40, 214, 1) 100%
-  );
-  background: -webkit-linear-gradient(
-    117deg,
-    rgba(2, 0, 36, 1) 0%,
-    rgba(9, 9, 121, 1) 63%,
-    rgba(0, 40, 214, 1) 100%
-  );
-  background: linear-gradient(
-    117deg,
-    rgba(2, 0, 36, 1) 0%,
-    rgba(9, 9, 121, 1) 63%,
-    rgba(0, 40, 214, 1) 100%
-  );
-  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#020024",endColorstr="#0028d6",GradientType=1);
-  height: 100vh;
-  width: 100%;
-  z-index: -1;
-}
 #particles-container-about {
   background: #ffff;
   height: 100vh;

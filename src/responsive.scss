@@ -1,8 +1,16 @@
 /* Extra small devices (phones, 600px and down) */
 @media only screen and (max-width: 600px) {
+  //HOME
+  // .wrapper {
+  //     #intro {
+  //         h1 {
+  //             fs
+  //         }
+  //     }
+  // }
   #toggler {
-    top: 4%;
-    left: 82%;
+    top: 3%;
+    left: 75%;
     transform: scale(0.8);
   }
   #menu {

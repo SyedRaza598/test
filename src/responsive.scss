@@ -129,16 +129,16 @@
         background-color: rgb(80, 58, 218);
         display: block;
         align-self: center;
-        margin: -5px 0px 0px 10.5em;
+        margin: -5px 0px 0px 4.3em;
       }
     }
     .timeLine {
-      height: 40.4rem;
+      height: 97%;
       width: 4px;
       background-color: slateblue;
       position: absolute;
       left: 2%;
-      top: 6%;
+      top: 2.7%;
       border-radius: 10px;
       &::before {
         content: '1';
@@ -151,7 +151,7 @@
         border-radius: 50%;
         border: 5px solid royalblue;
         position: absolute;
-        top: 9%;
+        top: 9.6%;
         left: -15px;
       }
       &::after {
@@ -165,7 +165,7 @@
         border-radius: 50%;
         border: 6px solid royalblue;
         position: absolute;
-        top: 60.5%;
+        top: 57%;
         left: -16px;
       }
     }

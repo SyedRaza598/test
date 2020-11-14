@@ -14,9 +14,9 @@ const Navigation = () => {
 
   const posY = () => {
     window.addEventListener('scroll' , function(){
-      setFind(window.pageYOffset);
+      //setFind(window.pageYOffset);
       console.log(find);
-      if(find > 30){
+      if(window.pageYOffset > 30){
         gsap.to('.topDiv' , {
           backgroundColor: "orange",
           duration: 0
@@ -32,7 +32,7 @@ const Navigation = () => {
 
   useEffect(() => {
     posY();
-  },[find]);
+  });
 
   const crossRotate = () => {
     if (toggle == 'Close') {

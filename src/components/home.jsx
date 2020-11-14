@@ -18,7 +18,7 @@ const Home = () => {
                 },
               },
               color: {
-                value: '#ffffff',
+                value: 'black',
               },
               shape: {
                 type: 'circle',
@@ -122,9 +122,9 @@ const Home = () => {
         />
         <div id="intro">
           <h1>
-            Hi! I'm Syed Raza-
+            <span>Hi!</span> I'm Syed Raza-
             <br />
-            Front-end Developer/Designer.
+            Front-end Developer/Designer<span>.</span>
           </h1>
         </div>
       </div>

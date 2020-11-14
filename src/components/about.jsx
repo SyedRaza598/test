@@ -2,6 +2,7 @@ import React from 'react';
 import { useState , useEffect} from 'react';
 import Particles from 'react-particles-js';
 import Footer from './footer';
+import undraw from './undraw1.svg';
 
 const About = (props) => {
   const [check , setCheck] = useState(false);
@@ -11,7 +12,7 @@ const About = (props) => {
       <div className="container">
         <div className="row">
           <div id="pic-div" className="col-sm-12 col-md-12 col-lg-6">
-            <p>Image here</p>
+            <img src={undraw} alt=""/>
           </div>
           <div id="hire-me" className="col-sm-12 col-md-12 col-lg-6">
             <h1>Why Hire Me?</h1>
@@ -83,7 +84,7 @@ const About = (props) => {
           <div className="timeLine"></div>
         </div>
       </div>
-      <Footer email={'shah.one3@gmail.com'} password={'4928'} check={check} />
+      {/* <Footer email={'shah.one3@gmail.com'} password={'4928'} check={check} /> */}
       <Particles
         id="particles-container-about"
         params={{

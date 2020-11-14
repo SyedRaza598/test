@@ -1,22 +1,18 @@
 /* Extra small devices (phones, 600px and down) */
 @media only screen and (max-width: 600px) {
-  // #parent {
-  //     position: relative;
-  //     height: auto;
-  //     width: auto;
-  //     background-color: blueviolet;
-  //   }
-  //   .navWrapper {
-  //     display: block;
-  //     background-color: green;
-  //     height: 80px;
-  //     position: absolute;
-  //     top: 0;
-  //   }
+  #pic-div {
+    //background-color: olive;
+    padding: 40px;
+    img {
+      width: 100%;
+      margin-top: 19%;
+      //background-color: olive;
+    }
+  }
   .topDiv {
     height: 80px;
     width: 100%;
-    background-color: transparent;
+    background-color: #fff;
     position: fixed;
     top: 0%;
     z-index: 3;
@@ -45,7 +41,7 @@
     left: 0;
   }
   #hire-me {
-    margin: 4.5rem 0px;
+    margin: 20px 0px;
     position: relative;
     // h1 {
     //   font-size: 5vw;

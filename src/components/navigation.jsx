@@ -15,18 +15,18 @@ const Navigation = () => {
   const posY = () => {
     window.addEventListener('scroll' , function(){
       //setFind(window.pageYOffset);
-      console.log(find);
-      if(window.pageYOffset > 30){
-        gsap.to('.topDiv' , {
-          backgroundColor: "orange",
-          duration: 0
-        })
-      }else{
-        gsap.to('.topDiv' , {
-          backgroundColor: "transparent",
-          duration: 0
-        });
-      };
+      // console.log(find);
+      // if(window.pageYOffset > 30){
+      //   gsap.to('.topDiv' , {
+      //     backgroundColor: "rgba(255, 255, 255, 0.9)",
+      //     duration: 0
+      //   })
+      // }else{
+      //   gsap.to('.topDiv' , {
+      //     backgroundColor: "transparent",
+      //     duration: 0
+      //   });
+      // };
     });
   };
 
@@ -57,18 +57,18 @@ const Navigation = () => {
   };
 
   const navToggler = (currentPath) => {
-    for (let i = 0; i < menuColor.length; i++) {
-      if (currentPath == '/projects' || currentPath == '/about') {
-        menuState.style.color = 'black';
-        menuColor[i].style.backgroundColor = 'black';
-        console.log(currentPath);
-        console.log('done');
-      } else {
-        menuColor[i].style.backgroundColor = '#ffff';
-        menuState.style.color = '#fff';
-        console.log('not-done');
-      }
-    }
+    // for (let i = 0; i < menuColor.length; i++) {
+    //   if (currentPath == '/projects' || currentPath == '/about') {
+    //     menuState.style.color = 'black';
+    //     menuColor[i].style.backgroundColor = 'black';
+    //     console.log(currentPath);
+    //     console.log('done');
+    //   } else {
+    //     menuColor[i].style.backgroundColor = '#ffff';
+    //     menuState.style.color = '#fff';
+    //     console.log('not-done');
+    //   }
+    // }
     //Toogler
     if (toggle == 'Menu') {
       setToggle('Close');

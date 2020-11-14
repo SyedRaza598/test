@@ -7,9 +7,32 @@ import Home from './home';
 
 const Navigation = () => {
   const [toggle, setToggle] = useState('Menu');
+  const [find , setFind] = useState(0);
   const duration = 0.3;
   let menuColor = document.querySelectorAll('.menuLine');
   let menuState = document.getElementById('toggler');
+
+  const posY = () => {
+    window.addEventListener('scroll' , function(){
+      setFind(window.pageYOffset);
+      console.log(find);
+      if(find > 30){
+        gsap.to('.topDiv' , {
+          backgroundColor: "orange",
+          duration: 0
+        })
+      }else{
+        gsap.to('.topDiv' , {
+          backgroundColor: "transparent",
+          duration: 0
+        });
+      };
+    });
+  };
+
+  useEffect(() => {
+    posY();
+  },[find]);
 
   const crossRotate = () => {
     if (toggle == 'Close') {

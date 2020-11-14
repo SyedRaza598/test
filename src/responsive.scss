@@ -17,7 +17,7 @@
     height: 80px;
     width: 100%;
     background-color: transparent;
-    position: absolute;
+    position: fixed;
     top: 0%;
     z-index: 3;
   }
@@ -134,15 +134,10 @@
     //background-color: saddlebrown;
     position: relative;
     #header {
-      text-align: center;
-      &::after {
-        content: '';
-        height: 4px;
-        width: 120px;
-        background-color: rgb(80, 58, 218);
-        display: block;
-        align-self: center;
-        margin: -5px 0px 0px 4.3em;
+      h1 {
+        &::after {
+          margin: 6px 0px 0px 18%;
+        }
       }
     }
     .timeLine {

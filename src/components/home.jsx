@@ -1,24 +1,24 @@
 import React from 'react';
 import Particles from 'react-particles-js';
 import Footer from './footer';
+import myPic from './IMG1.png';
 
 const Home = () => {
   return (
     <React.Fragment>
-      <div className="wrapper">
         <Particles
           id="particles-container"
           params={{
             particles: {
               number: {
-                value: 5,
+                value: 20,
                 density: {
                   enable: false,
                   value_area: 1300,
                 },
               },
               color: {
-                value: 'black',
+                value: '#32965d',
               },
               shape: {
                 type: 'circle',
@@ -120,12 +120,22 @@ const Home = () => {
             retina_detect: true,
           }}
         />
+        <div className="wrapper">
         <div id="intro">
-          <h1>
-            <span>Hi!</span> I'm Syed Raza-
-            <br />
-            Front-end Developer/Designer<span>.</span>
-          </h1>
+          <div id="content">
+            <h1>
+              <span>Hi!</span> I'm Syed Raza-
+              <br />
+              Front-end Developer/Designer<span>.</span>
+            </h1>
+            <div className="buttons">
+              <button id="resume">My Resume</button>
+              <button id="contact">Contact Me</button>
+            </div>
+          </div>
+        </div>
+        <div id="img-div">
+          <img src={myPic} alt=""/>
         </div>
       </div>
     </React.Fragment>

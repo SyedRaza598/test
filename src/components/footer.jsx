@@ -73,6 +73,14 @@ const Footer = ({email , password , check}) => {
                 <input onBlur={formik.handleBlur} type="text" name="password" id="password" onChange={formik.handleChange} value={formik.values.password}/>
                 <button type="submit">Submit</button>
             </form>
+
+            //---------------------------------------
+            <div className="fonting">
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis blanditiis et nostrum nisi quaerat labore? Hic ducimus adipisci veniam dicta!</p>
+                        <div className="inside">
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint, eum?</p>
+                        </div>
+            </div>
         </React.Fragment>
     );
 };

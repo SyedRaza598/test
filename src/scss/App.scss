@@ -1,0 +1,386 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500;600;700;800;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Staatliches&display=swap');
+@import 'check';
+$myh1Size: clamp(1.6rem, 5vw, 2rem);
+$myPsize: clamp(0.8em, 2vw, 1em);
+$primaryClr: #32965d;
+body {
+  font-family: 'Montserrat', sans-serif;
+  overflow-x: hidden;
+}
+
+//Image
+#pic-div {
+  //background-color: olive;
+  padding: 80px;
+  img {
+    width: 100%;
+    margin-top: 10%;
+  }
+}
+//Toggler CSS
+#toggler {
+  text-align: center;
+  height: auto;
+  width: 80px;
+  color: rgb(0, 0, 0);
+  background-color: transparent;
+  border: none;
+  border-radius: 10px;
+  position: fixed;
+  top: 45%;
+  left: 2%;
+  z-index: 5;
+  cursor: pointer;
+  font-weight: 500;
+  span {
+    height: 2px;
+    width: 40px;
+    background-color: rgb(0, 0, 0);
+    display: block;
+    margin: 6px 0px 0px 20px;
+  }
+}
+//Menu Div CSS----------------------------------------
+#menu {
+  position: fixed;
+  top: 0;
+  left: 0;
+  background: $primaryClr;
+  width: 0%;
+  height: 100%;
+  z-index: 4;
+  ul {
+    list-style: none;
+    display: flex;
+    position: absolute;
+    top: 37%;
+    left: 25%;
+    visibility: hidden;
+    li {
+      margin: 40px;
+      font-weight: 500;
+      font-size: 40px;
+      color: #fff;
+      font-family: 'Staatliches', cursive;
+      .link {
+        color: #fff;
+        text-decoration: none;
+      }
+    }
+  }
+}
+//HOME
+#particles-container {
+  //background-color: indianred;
+  height: 100vh;
+}
+
+.wrapper {
+  display: grid;
+  grid-template-columns: 55% 45%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  //background-color: blue;
+  #intro {
+    //background-color: yellow;
+    position: relative;
+    #content {
+      position: absolute;
+      top: 40%;
+      left: 17%;
+      h1 {
+        color: $primaryClr;
+        font-size: $myh1Size;
+      }
+      .buttons {
+        button {
+          height: 50px;
+          width: 160px;
+          border: none;
+          margin-top: 3%;
+          font-size: 18px;
+          font-weight: 600;
+          &:focus {
+            display: none;
+          }
+          box-shadow: 3px 10px 20px $primaryClr;
+        }
+        #resume {
+          border: 3px solid $primaryClr;
+          border-bottom-right-radius: 20px;
+          border-top-left-radius: 20px;
+          background: #fff;
+          transition: 0.2s ease;
+          &:hover {
+            background: $primaryClr;
+            color: #fff;
+          }
+        }
+        #contact {
+          color: #fff;
+          border-bottom-left-radius: 20px;
+          border-top-right-radius: 20px;
+          background: $primaryClr;
+          margin-left: 10%;
+          transition: 0.1s ease;
+          &:hover {
+            border: 3px solid $primaryClr;
+            background: #fff;
+            color: black;
+          }
+        }
+      }
+    }
+  }
+  #img-div {
+    background-color: transparent;
+    img {
+      width: 70%;
+      margin-top: 6rem;
+    }
+  }
+}
+//About Me-----------------------------------
+.aboutMain {
+  position: absolute;
+  top: 0;
+  left: 0;
+  h1 {
+    font-size: 10px;
+  }
+}
+#hire-me {
+  margin: 4.5rem 0px;
+  position: relative;
+  h1 {
+    font-size: $myh1Size;
+  }
+  p {
+    font-size: $myPsize;
+  }
+  .skills {
+    margin: 20px 0px;
+    #progress,
+    #progress1,
+    #progress2,
+    #progress3 {
+      height: 10px;
+      width: 15rem;
+      background: linear-gradient(
+        to right,
+        $primaryClr 0%,
+        $primaryClr 80%,
+        rgb(228, 228, 228) 80%,
+        rgb(228, 228, 228) 100%
+      );
+      position: relative;
+      border-radius: 10px;
+      margin-top: 5px;
+      &::before {
+        content: '';
+        display: block;
+        height: 25px;
+        width: 25px;
+        background-color: #fff;
+        border-radius: 50%;
+        border: 6px solid $primaryClr;
+        position: absolute;
+        top: -7px;
+        left: 77%;
+      }
+    }
+    #progress1 {
+      background: linear-gradient(
+        to right,
+        $primaryClr 0%,
+        $primaryClr 84%,
+        rgb(228, 228, 228) 84%,
+        rgb(228, 228, 228) 100%
+      );
+      &::before {
+        left: 82%;
+      }
+    }
+    #progress2 {
+      background: linear-gradient(
+        to right,
+        $primaryClr 0%,
+        $primaryClr 60%,
+        rgb(228, 228, 228) 60%,
+        rgb(228, 228, 228) 100%
+      );
+      &::before {
+        left: 56%;
+      }
+    }
+    #progress3 {
+      background: linear-gradient(
+        to right,
+        $primaryClr 0%,
+        $primaryClr 84%,
+        rgb(228, 228, 228) 84%,
+        rgb(228, 228, 228) 100%
+      );
+      &::before {
+        left: 82%;
+      }
+    }
+    span {
+      font-size: 12px;
+    }
+    #level {
+      position: absolute;
+      left: 40%;
+      margin: 4px;
+    }
+  }
+}
+.experience {
+  position: relative;
+  #header {
+    text-align: center;
+    h1 {
+      font-size: $myh1Size;
+      display: inline-block;
+      &::after {
+        content: '';
+        height: 4px;
+        width: 120px;
+        background-color: $primaryClr;
+        display: block;
+        align-self: center;
+        margin: 6px 0px 0px 25%;
+        align-self: center;
+      }
+    }
+  }
+  .timeLine {
+    height: 22rem;
+    width: 4px;
+    background-color: $primaryClr;
+    position: absolute;
+    left: 50%;
+    top: 15%;
+    border-radius: 10px;
+    &::before {
+      content: '1';
+      text-align: center;
+      font-weight: bold;
+      display: block;
+      height: 35px;
+      width: 35px;
+      background-color: #fff;
+      border-radius: 50%;
+      border: 5px solid $primaryClr;
+      position: absolute;
+      top: 20%;
+      left: -15px;
+    }
+    &::after {
+      content: '2';
+      display: block;
+      text-align: center;
+      font-weight: bold;
+      height: 35px;
+      width: 35px;
+      background-color: #fff;
+      border-radius: 50%;
+      border: 5px solid $primaryClr;
+      position: absolute;
+      top: 70%;
+      left: -16px;
+    }
+  }
+  .companies {
+    // padding: 100px;
+    // margin: 0;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    justify-items: center;
+    grid-auto-rows: minmax(150px auto);
+    grid-auto-columns: minmax(150px auto);
+    grid-row-gap: 20px;
+    #company1 {
+      h3 {
+        margin-top: 80px;
+      }
+    }
+    #company2 {
+      h3 {
+        margin-top: 40px;
+      }
+      grid-column: 2/3;
+      grid-row: 2;
+    }
+    #discription1 {
+      //background-color: hotpink;
+      padding: 40px 0px 0px 40px;
+    }
+    #discription2 {
+      //background-color: yellow;
+      padding: 0px 40px 0px 0px;
+    }
+  }
+}
+//Projects----------------------------------------------------------
+// #form {
+//   display: none;
+//   padding: 25%;
+//   input {
+//     width: 100%;
+//     padding: 12px 20px;
+//     margin: 8px 0;
+//     display: block;
+//     border: 1px solid #ccc;
+//     border-radius: 4px;
+//     box-sizing: border-box;
+//   }
+//   label {
+//     font-weight: bolder;
+//   }
+// }
+
+//Buttons CSS-------------------------------------------------
+
+// .buttons {
+//   button {
+//     height: 50px;
+//     width: 160px;
+//     border: none;
+//     margin-top: 3%;
+//     font-size: 18px;
+//     &:focus {
+//       display: none;
+//     }
+//     box-shadow: 3px 10px 20px $primaryClr;
+//   }
+//   #resume {
+//     border: 3px solid $primaryClr;
+//     border-bottom-right-radius: 20px;
+//     border-top-left-radius: 20px;
+//     background: #fff;
+//     font-weight: 600;
+//     transition: 0.2s ease;
+//     &:hover {
+//       background: $primaryClr;
+//       color: #fff;
+//     }
+//   }
+//   #contact {
+//     color: #fff;
+//     border-bottom-left-radius: 20px;
+//     border-top-right-radius: 20px;
+//     background: $primaryClr;
+//     font-weight: 600;
+//     margin-left: 10%;
+//     transition: 0.1s ease;
+//     &:hover {
+//       border: 3px solid $primaryClr;
+//       background: #fff;
+//       color: black;
+//     }
+//   }
+// }

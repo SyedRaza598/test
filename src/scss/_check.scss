@@ -1,0 +1,37 @@
+@mixin myFunc($height, $width) {
+  @if ($height == $width) {
+    height: $height;
+    width: $width;
+    background-color: gray;
+    border-radius: $height;
+  } @else {
+    height: $height;
+    width: $width;
+    background-color: green;
+  }
+}
+.fonting {
+  width: 80%;
+  height: 100vh;
+  background-color: greenyellow;
+  font-size: 2rem;
+  position: relative;
+  left: 20px;
+  .inside {
+    background-color: hotpink;
+    @include myFunc(80%, 80%);
+    font-size: 2em;
+    float: right;
+    position: absolute;
+    top: 0%;
+  }
+}
+
+// @mixin myMix {
+//   width: 80%;
+//   height: 100vh;
+//   background-color: greenyellow;
+//   font-size: 2rem;
+//   position: relative;
+//   left: 20px;
+// }

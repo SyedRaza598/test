@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import './App.css';
-import './App.scss';
+import './scss/App.scss';
 import './responsive.scss';
 import Navigation from './components/navigation.jsx';
 import audio from './assets/Song.mp3';
@@ -21,7 +21,7 @@ const App = () => {
   });
 
   return (
-    <div className="App" onLoad={audioPlay}>
+    <div className="App" >
       <audio src={audio} id="myAudio"></audio>
       {/* <button onClick={audioPlay}>Play</button> */}
       <Navigation />

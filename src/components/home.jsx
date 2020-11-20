@@ -128,6 +128,7 @@ const Home = () => {
               <br />
               Front-end Developer/Designer<span>.</span>
             </h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium neque laudantium minus consequatur atque fugit qui non similique voluptates illo vel veritatis dicta eligendi, quisquam, ullam odio perferendis voluptas sunt.</p>
             <div className="buttons">
               <button id="resume">My Resume</button>
               <button id="contact">Contact Me</button>

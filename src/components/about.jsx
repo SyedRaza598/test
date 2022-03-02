@@ -1,18 +1,19 @@
-import React from 'react';
-import { useState , useEffect} from 'react';
-import Particles from 'react-particles-js';
-import Footer from './footer';
-import undraw from './undraw1.svg';
+import React from "react";
+import { useState, useEffect } from "react";
+import Particles from "react-particles-js";
+import Footer from "./footer";
+import undraw from "./undraw1.svg";
 
 const About = (props) => {
-  const [check , setCheck] = useState(false);
-  
+  const [check, setCheck] = useState(false);
+
   return (
     <React.Fragment>
+      {/* <h1>Hello World</h1> */}
       <div className="container">
         <div className="row">
           <div id="pic-div" className="col-sm-12 col-md-12 col-lg-6">
-            <img src={undraw} alt=""/>
+            <img src={undraw} alt="" />
           </div>
           <div id="hire-me" className="col-sm-12 col-md-12 col-lg-6">
             <h1>Why Hire Me?</h1>
@@ -52,34 +53,34 @@ const About = (props) => {
             <h1>Work Experience</h1>
           </div>
           <div className="companies">
-          <div id="company1" className="company">
-            <h3>DevBunch Pvt.Ltd</h3>
-          </div>
-          <div id="discription1" className="">
-            <p>
-              Lorem ipsum dolor sit, amet consectetur adipisicing elit. Adipisci
-              expedita molestias facilis nam rerum ad harum odit, veniam
-              consequuntur assumenda voluptatum error reiciendis quos quam dolor
-              provident sunt itaque voluptates.Possimus quisquam esse ullam
-              suscipit excepturi eveniet placeat. Odio error voluptatum ipsum.
-              Atque veritatis eligendi inventore, quisquam modi alias suscipit
-              delectus perferendis.
-            </p>
-          </div>
-          <div id="company2" className=" company">
-            <h3>DevBunch Pvt.Ltd</h3>
-          </div>
-          <div id="discription2" className="">
-            <p>
-              Lorem ipsum dolor sit, amet consectetur adipisicing elit. Adipisci
-              expedita molestias facilis nam rerum ad harum odit, veniam
-              consequuntur assumenda voluptatum error reiciendis quos quam dolor
-              provident sunt itaque voluptates.Possimus quisquam esse ullam
-              suscipit excepturi eveniet placeat. Odio error voluptatum ipsum.
-              Atque veritatis eligendi inventore, quisquam modi alias suscipit
-              delectus perferendis.
-            </p>
-          </div>
+            <div id="company1" className="company">
+              <h3>DevBunch Pvt.Ltd</h3>
+            </div>
+            <div id="discription1" className="">
+              <p>
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                Adipisci expedita molestias facilis nam rerum ad harum odit,
+                veniam consequuntur assumenda voluptatum error reiciendis quos
+                quam dolor provident sunt itaque voluptates.Possimus quisquam
+                esse ullam suscipit excepturi eveniet placeat. Odio error
+                voluptatum ipsum. Atque veritatis eligendi inventore, quisquam
+                modi alias suscipit delectus perferendis.
+              </p>
+            </div>
+            <div id="company2" className=" company">
+              <h3>DevBunch Pvt.Ltd</h3>
+            </div>
+            <div id="discription2" className="">
+              <p>
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                Adipisci expedita molestias facilis nam rerum ad harum odit,
+                veniam consequuntur assumenda voluptatum error reiciendis quos
+                quam dolor provident sunt itaque voluptates.Possimus quisquam
+                esse ullam suscipit excepturi eveniet placeat. Odio error
+                voluptatum ipsum. Atque veritatis eligendi inventore, quisquam
+                modi alias suscipit delectus perferendis.
+              </p>
+            </div>
           </div>
           <div className="timeLine"></div>
         </div>
@@ -97,10 +98,10 @@ const About = (props) => {
               },
             },
             color: {
-              value: '#161514',
+              value: "#161514",
             },
             shape: {
-              type: 'circle',
+              type: "circle",
               //   stroke: {
               //     width: 5,
               //     color: 'green',
@@ -109,7 +110,7 @@ const About = (props) => {
                 nb_sides: 1,
               },
               image: {
-                src: 'img/github.svg',
+                src: "img/github.svg",
                 width: 100,
                 height: 100,
               },
@@ -137,7 +138,7 @@ const About = (props) => {
             line_linked: {
               enable: true,
               distance: 200,
-              color: '#fff',
+              color: "#fff",
               opacity: 0.4,
               width: 1,
             },
@@ -157,16 +158,16 @@ const About = (props) => {
             },
           },
           interactivity: {
-            detect_on: 'canvas',
+            detect_on: "canvas",
             events: {
               onhover: {
                 enable: true,
-                mode: 'grab',
+                mode: "grab",
                 distance: 200,
               },
               onclick: {
                 enable: true,
-                mode: 'push',
+                mode: "push",
               },
               resize: true,
             },
